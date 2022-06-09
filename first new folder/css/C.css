@@ -1,0 +1,42 @@
+header{
+    display: flex;
+    background-color: black;
+    justify-content: space-between;
+    padding:20px; 
+    font-family:Arial, Helvetica, sans-serif;
+    height:0%;
+    font-size: larger;
+    align-items: center;
+}
+a:hover{
+    background-color: yellow;
+    color:black;
+    padding: 20px;
+    border-radius: 45px;
+  }
+  h1{
+      color:whitesmoke;
+      font-size:40px;
+      justify-content: space-between;
+      text-size-adjust:inherit;
+      display: flex;
+  }
+  nav{
+    display: flex;
+    flex:1;
+    padding:none;
+}
+.menu-item{
+    font-size: 20px; 
+    line-height: 30px;
+    border-radius:200px;
+    padding:55px; 
+    padding: right 80px;
+    font-weight:bolder;
+    height: 100%;
+    color:wheat;
+    padding-left: 100px;
+} 
+a{
+    text-decoration: none;
+}
