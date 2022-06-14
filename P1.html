@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        .img{
+            width: 100%;
+            height: 200px;
+            border: 1px solid black ;
+        }
+        #solution{
+            width: 100%;
+            height: 300px;
+            border:2px solid  #5383d3;
+            font-size: 50px;
+        
+        }
+       
+
+
+        body{
+    margin: 0;
+    color: black;
+    text-decoration: none;
+    background-color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+}
+::-webkit-scrollbar{
+    width: 0;
+}
+a{
+    text-decoration: none;
+    color:black;
+    letter-spacing: 1px;
+}
+.main-content{
+    width: 90%;
+    padding: 30px;
+    
+    
+}
+
+.content{
+    display: flex;
+    overflow: hidden;
+
+}
+#one h1{
+    margin: 0;
+}
+.main-content h1{
+    font-size: 18px;
+   
+    font-size: 20px;
+    font-family: cursive;
+    font-weight:bolder;
+}
+.main-content p{
+    font-size: 18px;
+    
+    font-size: 20px;
+    font-family:Arial, Helvetica, sans-serif cursive;
+    font-weight:bolder;
+}
+
+.main-content  h1 span{
+    color: #5383d3;
+}
+.main-content p span{
+    color: #5383d3;
+    font-weight: bolder;
+}
+
+
+		
+ a:hover{
+    background-color:#5383d3;
+    color:black;
+    padding:10px;
+    border-radius:10px;
+  }
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color:black;
+  border-style: solid;
+  border-color:#5383d3;
+  border-width: 2px;
+}
+
+.header .logo {
+  font-size: 40px;
+  font-family:cursive;
+  color:WHITE;
+  text-decoration: none;
+  margin-left: 30px;
+  font-weight:bolder ;
+  text-align: right;
+}
+.header .logo span{
+    color: #5383d3;
+}
+
+.nav-items {
+  font-family:cursive;
+  font-size: larger;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color:BLACK;
+  margin-right: 10px;
+  font-weight: bolder;
+}
+
+.nav-items a {
+  text-decoration: none;
+  color:WHITE;
+  padding: 20px 40px;
+}
+
+
+
+footer{
+  display:flex;
+	position:none;
+	bottom: 0;
+	border-style: solid;
+    border-color:#5383d3;
+    border-width: 2px;
+}
+.footer-distributed{
+	background-color:black;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+ 
+	padding: 55px 55px;
+	margin-top: 3px;
+}
+ 
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+ 
+.footer-distributed .footer-left{
+	width: 40%;
+	line-height:none;
+}
+ 
+.footer-distributed .footer-left h4{
+font-size:20px ;
+ font-family:Arial, Helvetica, sans-serif;
+ color: #fff;
+}
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Cookie', cursive;
+	margin: 0;
+}
+ 
+.footer-distributed h3 span{
+	color:  #5383d3;
+}
+ 
+ 
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+ 
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+ 
+.footer-distributed .footer-company-name{
+	color:  #8f9296;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+ 
+ 
+.footer-distributed .footer-center{
+	width: 35%;
+}
+ 
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+ 
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+ 
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin:0;
+}
+ 
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+ 
+.footer-distributed .footer-center p a{
+	color:  #5383d3;
+	text-decoration: none;;
+}
+ 
+.footer-distributed .footer-right{
+	width: 20%;
+}
+ 
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:#5383d3;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+	font-family: cursive;
+}
+ 
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:#5383d3;
+	font-size: 25px;
+	font-weight: bolder;
+	margin-bottom: 20px;
+}
+ 
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+ 
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:#fff;
+	border-radius: 2px;
+ 
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+ 
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+ 
+ 
+@media (max-width: 880px) {
+ 
+	.footer-distributed{
+		font: bold 14px sans-serif;
+ 
+	}
+ 
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+ 
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+	.main {
+		line-height: normal;
+		font-size: auto;
+	}
+ 
+}
+
+.next a{
+font-size: 20px;
+font-family: cursive;
+font-weight: bold;
+border-style:solid;
+background-color:#5383d3;
+    padding:10px;
+    border-radius:10px;
+	color:#33383b;
+
+}
+
+.next a:hover{
+    background-color:#5383d3;
+    padding:5px;
+    border-radius:10px;
+	color:black;
+	height: 25px;
+    font-weight: bolder;
+    
+}
+
+
+
+    </style>
+    <title>ex1</title>
+</head>
+<body>
+    <header class="header">
+
+        <h1 class="logo">
+          <span>CSS </span>PROGRAMS
+        </h1>
+     
+      <nav class="nav-items">
+         <a href="index.html">HOME</a>
+         
+      </nav>
+    </header>
+    <div class="content">
+        <div class="main-content">
+            
+        <p>
+         <H1>PROGRAM 1-CODE:</H1>
+        </p>
+        <div id="solution">
+            <iframe src="q1.txt" frameborder="0" width="100%" height="100%" ></iframe>
+        </div><br>
+        
+
+        <div id="question">
+
+        <h1>OUTPUT: <span> </span></h1>
+        
+        <div class="img">
+            <img src="q1.txt" alt="" height="100%" width="100%">
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+        </div>
+        
+        
+        </div> 
+       <br> <btn class="next">
+        <a href="">BACK</a>
+    </btn>
+
+
+
+<p>   
+
+    
+</p>
+        <footer class="footer-distributed">
+  
+            <div class="footer-left">
+            <p class="footer-head">
+               <h4>DESIGNED BY</h4></p> 
+               <h3>ASH <span>TOGARH</span></h3>
+                           
+             <p class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="#">About</a>
+             </p>
+          
+             <p class="footer-company-name"></p>
+             </div>
+                 
+                 <div class="footer-center">
+                 <div><i class="fa fa-heading"></i>
+                 <P> CONTACT US</P>
+                 </div>
+         
+                 <div><i class="fa fa-map-marker"></i>
+                 <p>PUNJAB,INDIA</p>
+                 </div>
+          
+                 <div><i class="fa fa-phone"></i>
+                 <p>+917717646418</p>
+                 </div>
+          
+                 <div>
+                 <i class="fa fa-envelope"></i>
+                 <p><a href="Togarh@gmail.com">Tograh@gmail.com</a></p>
+                  </div>
+          
+                 </div>
+          
+                 <div class="footer-right">
+         
+                 <p class="footer-company-about">
+                 <span>SOCIAL LINKS </span>
+                         <div class="footer-icons">
+                         <a href="#"><i class="fa fa-instagram"></i></a>
+                         <a href="#"><i class="fa fa-you"></i></a>
+                         <a href="#"><i class="fa fa-linkedin"></i></a>
+                         <a href="#"><i class="fa fa-github"></i></a>
+                 </div>
+          
+             </div>
+          
+         </footer>
+
+
+
+
+</body>
+</html>
