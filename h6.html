@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+		HTML TUTORIAL 
+		</title>
+		<style>
+			* {
+				box-sizing: border-box;
+			}
+			
+ a:hover{
+    background-color:#5383d3;
+    color:black;
+    padding:10px;
+    border-radius:10px;
+    height:55px;
+    
+  }
+
+.header {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color:black;
+  border-style: solid;
+  border-color:white;
+  border-width: 1.5px;
+  height:85px;
+}
+
+
+.header .logo {
+  font-size: 40px;
+  font-family:cursive;
+  color:WHITE;
+  text-decoration: none;
+  margin-left: 30px;
+  font-weight:bolder ;
+  text-align: right;
+}
+.header .logo span{
+    color: #5383d3;
+}
+
+.nav-items {
+  font-family:cursive;
+  font-size: larger;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color:BLACK;
+  margin-right: 10px;
+  font-weight: bolder;
+}
+
+.nav-items a {
+  text-decoration: none;
+  color:WHITE;
+  padding: 20px 40px;
+}
+			
+			
+
+h2 {
+	color:black;
+	text-align:center;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+
+h1{
+    font-family: cursive;
+    font-weight: bold;
+  }
+		
+p{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:normal ;
+
+}
+
+strong{
+	font-weight: bolder;
+	font-family: cursive;
+			
+}
+		
+h2{
+    font-family: cursive;
+	text-decoration: underline;
+	}
+		
+h2 span{
+	color: #5383d3;
+}
+
+/* Media query to set website layout
+according to screen size */
+	@media screen and (max-width:600px) {
+	.columnA, .columnB {
+	width: 100%;}	}
+		
+   @media screen and (max-width:200px) {
+	.columnA, .columnB {
+	width: 100%;}  }
+		
+		
+
+
+
+    .tut-top-area{
+    padding: 3%;
+    background: rgba(249,242,236,0.8);
+    background-blend-mode: normal;
+}
+.tut-top-area .sub-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tut-top-area .tutlogo{
+    width: 15%;
+}
+.tut-top-area .fwptutlogo{
+    width: 30%;
+    margin-bottom: 3%;
+}
+.tut-subnav-desc{
+    width: 45%;
+}
+.tut-top-area .web-banner-heading{
+        font-family: 'poppins-semibold';
+    	color: #3b3b3b;
+    	font-size: 39px;
+}
+.tut-top-area .tutsubnav-desc{
+    width: 45%;
+    padding: 2% 0;
+}
+.tut-top-area .fwptutsubnav-desc{
+    width: 52%;
+    padding: 2% 0;
+}
+.tut-top-area .tutnavitems{
+    display: flex;
+    padding: 2% 0;
+    width: 82%;
+    border-bottom: 4px solid #0556F3;
+}
+.tutnavitems p{
+    margin-right: 5%;
+}
+.tutnavitems p:nth-child(3){
+    margin-right: 2%;
+}
+.tutnavitems a{
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'poppins-medium';
+    font-size: larger;
+    color: #3b3b3b;
+}
+.tutnavitems a:hover{
+    color: #0556f3;
+}
+.tut-top-area .tutdesc{
+    font-family: 'poppins-medium';
+    color:black;
+    margin: 1% 14% 3% 14%;
+    text-align: center;
+    font-size: large;
+}
+.fwptutsubnav-desc .tutdesc{
+    font-family: 'poppins-medium';
+    color: #404040;
+    margin: 3% 0 0;
+    text-align: left;
+    font-size: large;
+}
+.blob1 img, .cssbannerblob1{
+    position: fixed;
+    z-index: -1;
+    top: 0;
+}
+.tut-content-block{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4%;
+    margin-top: -3%;
+    
+    
+}
+.tut-content-sidebar, .tut-content-show-content{
+    border-radius: 8px;
+    background:#fff;
+    background-blend-mode: normal;
+    box-shadow:none ; 
+    border: #0556f3;
+
+}
+
+.tut-content-sidebar{
+    width: 20%;
+    margin-right: 3%;
+    padding: 2% 1%;
+    max-height: fit-content;
+}  
+.tut-content-sidebar-heading{
+    border-bottom: 2px solid black;
+    font-size: larger;
+    font-family: 'poppins-semibold';
+    color:white;
+    padding-bottom: 3%;
+    text-align: center;
+    margin-bottom: 8%;
+}
+.tut-content-show-content{
+    width: 60%;
+    padding: 2% 1%;
+}
+.blob2 img{
+    position: fixed;
+    z-index: -1;
+    left: 84%;
+    top: 254px;
+}
+.tut-content-sidebar a{
+    display: block;
+    padding: 2% 4%;
+    color:#3b3b3b;
+    margin: 2%;
+    text-decoration: none;
+    font-family: 'poppins-medium';
+}
+
+a.httutsidebaritem-btn:hover{
+    border: none;
+    color:black;
+
+}
+
+.tutcontent-heading{
+    border-bottom: 3px solid black;
+    font-size:30px;
+    width: fit-content;
+    font-family: cursive;
+    color:black;
+    padding-bottom: 1%;
+    margin-bottom: 3%;
+    font-weight: bold ;
+}
+.tutcontent-subheading{
+    font-size: larger;
+    font-family: cursive;
+    color:black;
+}
+.tut-content-show-content .tut-content-description{
+    font-family: 'poppins-regular';
+    margin: 2% 0;
+}
+.tut-content-show-content .tut-content-description span{
+    font-weight: 600;
+}
+.tut-content-show-content ul{
+    margin-bottom: 2%;
+    margin-left: 1%;
+}
+.tut-content-show-content li{
+    margin-left: 3%;
+    margin-top: 1%;
+    font-family: 'poppins-regular';
+}
+.tut-content-show-content ol li img{
+    margin: 2% 0;
+}
+.tut-content-show-content .codeexamplebox{
+    color:black;
+    border-radius: 8px;
+    font-family: 'poppins-medium';
+    background: #ffffff;
+    margin: 2% 0;
+    background-blend-mode: normal;
+    border: 1px solid #0556f3;
+    box-shadow: 1px 2px 2px rgb(8 87 243);
+    width: fit-content;
+    padding: 3%;
+}
+.getdescdd1, .getdescdd2, .getdescdd3, .getdescdd4, .getexdd1, .getexdd2, .getexdd3{
+    display: none;
+}
+
+/* css exercises styling */ 
+.ex-sub-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5%;
+}
+.exbannerdesc{
+font-family: 'poppins-medium';
+    color: #404040;
+    font-size: large;
+}
+.descexer .web-banner-heading{
+    font-size: xx-large;
+}
+.ex-tutarea{
+    padding-bottom: 5%;
+    padding-top: 5%;
+}
+.exerciserow{
+    display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .exerciseconcol{
+        width: 25%;
+        margin: 1% 1% 2% 1%;
+        border-radius: 8px;
+        border: none;
+        border-top: 5px solid #0556f3;
+        background-color: #fff;
+        background: #ffffff;
+        background-blend-mode: normal;
+        box-shadow: 0px 2px 4px rgb(100 100 100 / 40%);
+    }
+    .exerciseconcolp{
+        padding: 1%;
+    }
+    .cssexersno{
+        font-family: 'poppins-semibold';
+        width: 12%;
+        background-color: #0556f3;
+        outline: none;
+        border: none;
+        border-top: 3px solid #0556f3;
+        margin-top: 0;
+        border-radius: 3px 0 24px;
+        color: #fff;
+        padding: 2%;
+    } 
+    .exerciseconcol .exerciseheading a{
+        font-family: 'cursiveS';
+        text-decoration: none;
+        color: #fff;
+        
+    }
+    .exerciseconcol .exerciseheading{
+        background-color: #0556f3;
+        border: none;
+        padding: 4%;
+        border-radius: 0 0 8px 8px;
+    }
+
+    .descexer{
+    margin-left: 3%;
+    width: 65%;
+    }
+    .fwpblob1{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: -99px;
+    }
+
+.hidden p{
+    color:white
+
+}
+
+
+.tut-content-sidebar-heading{
+    font-family: cursive;
+    color:black;
+    font-weight: bolder;
+    font-size: 30px;
+
+
+}
+
+
+
+
+
+a.httutsidebaritem-btn{
+    font-family: cursive;
+    font-weight: bold;
+    
+}
+
+
+.content .httutsidebaritem-btn {
+    font-family: cursive;
+    font-weight: 50px;
+}
+
+
+
+
+
+
+
+footer{
+  display:flex;
+	position:none;
+	bottom: 0;
+	border-style: solid;
+    border-color:white;
+    border-width: 2px;
+}
+.footer-distributed{
+	background-color:black;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+ 
+	padding: 55px 55px;
+	margin-top: 3px;
+}
+ 
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+ 
+.footer-distributed .footer-left{
+	width: 40%;
+	line-height:none;
+}
+ 
+.footer-distributed .footer-left h4{
+font-size:20px ;
+ font-family:Arial, Helvetica, sans-serif;
+ color: #fff;
+}
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Cookie', cursive;
+	margin: 0;
+}
+ 
+.footer-distributed h3 span{
+	color:  #5383d3;
+}
+ 
+ 
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+ 
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+ 
+.footer-distributed .footer-company-name{
+	color:  #8f9296;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+ 
+ 
+.footer-distributed .footer-center{
+	width: 35%;
+}
+ 
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+ 
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+ 
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin:0;
+}
+ 
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+ 
+.footer-distributed .footer-center p a{
+	color:  #5383d3;
+	text-decoration: none;;
+}
+ 
+.footer-distributed .footer-right{
+	width: 20%;
+}
+ 
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:#5383d3;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+	font-family: cursive;
+}
+ 
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:#5383d3;
+	font-size: 25px;
+	font-weight: bolder;
+	margin-bottom: 20px;
+}
+ 
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+ 
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:#fff;
+	border-radius: 2px;
+ 
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+ 
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+ 
+ 
+@media (max-width: 880px) {
+ 
+	.footer-distributed{
+		font: bold 14px sans-serif;
+ 
+	}
+ 
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+ 
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+
+
+}
+
+
+
+
+
+
+
+
+
+.tut-content-sidebar a{
+    font-family:cursive;
+    font-weight: bolder;
+    font-size: 18px;
+
+}
+
+ul.list{
+    list-style-type:square;
+    color: black;
+
+    
+}
+
+.next{
+font-size: 20px;
+font-family: cursive;
+font-weight: bold;
+border-style:solid;
+background-color:#5383d3;
+    padding:10px;
+    border-radius:10px;
+	color:#33383b;
+
+}
+
+.back{
+    font-size: 20px;
+font-family: cursive;
+font-weight: bold;
+border-style:solid;
+float: right;
+background-color:#5383d3;
+    padding:10px;
+    border-radius:10px;
+	color:#33383b;
+}
+p span{
+    color: #5383d3;
+}
+
+strong{
+    font-weight:light;
+    font-size: 18px;
+}
+p{
+    font-family: cursive;
+    font-size: 18px;
+}
+
+.ul li{
+    font-family: cursive;
+}
+
+</style>
+
+
+</head>
+	
+<body>
+ 
+          <header class="header">
+        <h1 class="logo"><span>HTML </span>TUTORIAL</h1>
+        <nav class="nav-items">
+        <a href="index.html">HOME</a>
+        </nav>
+        </header>
+        <div class="hidden">
+
+            <p>
+            id
+            ss
+            ss
+            a
+            </p>
+
+        </div>
+
+        
+
+
+        <section class="tut-content-block">
+            <div class="tut-content-sidebar">
+                <p target="_self" class="tut-content-sidebar-heading">CONTENTS</p>
+                <div class="content">
+                    <ul class="list">
+               <li class="ash"><a target="_self" class="httutsidebaritem-btn" href="H.html">Introduction To HTML</a></li>
+               <li><a target="_self" class="httutsidebaritem-btn" href="h2.html">Structure Of HTML Program</a></li>
+               <li><a target="_self" class="httutsidebaritem-btn" href="h3.html">Paragraph Breaks &Line Breaks</a></li>
+               <li><a target="_self" class="httutsidebaritem-btn" href="h4.html">Emphasizing  Material</a></li>
+               <li><a target="_self" class="httutsidebaritem-btn" href="h5.html">Text Lines: Bold,Italic,Underline</a></li>
+               <li><a target="_self" class="httutsidebaritem-btn" href="h6.html">Types Of Lists</a></li>
+               <li><a target="_self" class="httutsidebaritem-btn" href="h7.html">Ordered Lists</a></li>
+               <li><a target="_self" class="httutsidebaritem-btn" href="h8.html">Unordered Lists</a></li>
+               <li><a target="_self" class="httutsidebaritem-btn" href="h9.html">Defination Lists</a></li>
+               <li><a target="_self" class="httutsidebaritem-btn" href="h10.html">Frames</a></li>
+               <li><a target="_self" class="httutsidebaritem-btn" href="h11.html">Tables</a></li>
+               <li><a target="_self" class="httutsidebaritem-btn" href="h12.html">Adding Graphics To HTML</a></li>
+               <li><a target="_self" class="httutsidebaritem-btn" href="h13.html">Linking Documents</a></li>
+                </ul>
+                </div>
+            </div>
+            
+         
+            <div class="tut-content-show-content">
+                <p class="tutcontent-heading">TYPES OF LISTS</p>
+                <p class="tutcontent-subheading">
+                <strong><b>LISTS:</b></strong>
+                <P>
+                A list is a record of short pieces of related information or used to display the data or any information on web pages in the ordered or unordered form. The List can be used to store the information in short, either in bulleted form or numbered format, that visually help to look at a glance.<p>In other words, it is used to group together related items or lists, & used to structure and show important information where each list item is displayed on the new line. 
+                HTML lists allow the  content to   follow a proper semantic structure.HTML lists are  used to specify lists of information.</p><p> A list may contain one or more list elements.Each list item starts with tag <strong> <span>< li></span></strong> and ends with <strong> <span>< /li></span></strong>. Each list item element is used to represent an item in a list
+                .We can create a list inside another list, which will be termed as nested List.There are three types of lists these are:
+                </p></p>
+                  <hr>
+                  <strong> <span>TYPES:</span> </strong><ul><li><strong>Ordered LisT</strong></li><LI><strong>Unordered LisT</strong></LI><LI><strong>Defination LisT</strong></LI></b></ul>
+                  
+                   </div>
+            </section>
+        </div>
+
+<div class="ash">
+<br>  <btn class="next">
+        <a href="h5.html">BACK</a>
+    </btn>
+
+<btn class="back">
+    <a href="h7.html">NEXT</a>
+</btn>
+</div>
+<p>
+
+
+
+
+</p>
+        <footer class="footer-distributed">
+  
+            <div class="footer-left">
+            <p class="footer-head">
+               <h4>DESIGNED BY</h4></p> 
+               <h3>ASH <span>TOGARH</span></h3>
+                           
+             <p class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="#">About</a>
+             </p>
+          
+             <p class="footer-company-name"></p>
+             </div>
+                 
+                 <div class="footer-center">
+                 <div><i class="fa fa-heading"></i>
+                 <P> CONTACT US</P>
+                 </div>
+         
+                 <div><i class="fa fa-map-marker"></i>
+                 <p>PUNJAB,INDIA</p>
+                 </div>
+          
+                 <div><i class="fa fa-phone"></i>
+                 <p>+917717646418</p>
+                 </div>
+          
+                 <div>
+                 <i class="fa fa-envelope"></i>
+                 <p><a href="Togarh@gmail.com">Tograh@gmail.com</a></p>
+                  </div>
+          
+                 </div>
+          
+                 <div class="footer-right">
+         
+                 <p class="footer-company-about">
+                 <span>SOCIAL LINKS </span>
+                         <div class="footer-icons">
+                         <a href="#"><i class="fa fa-instagram"></i></a>
+                         <a href="#"><i class="fa fa-you"></i></a>
+                         <a href="#"><i class="fa fa-linkedin"></i></a>
+                         <a href="#"><i class="fa fa-github"></i></a>
+                 </div>
+          
+             </div>
+
+
+
+        
+</body>
+</html>				
