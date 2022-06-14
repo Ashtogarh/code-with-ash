@@ -1,0 +1,49 @@
+
+<html>
+    <head>
+        <title>
+            question28
+        </title>
+        <style>
+            .set{
+                padding-left: 0px;
+                display: inline-block;
+                text-align: center;
+                width: 28%;
+                text-align: center;
+            }
+            .first{
+                padding-left: 13%;
+                border:2px solid black;
+                padding-top:2%;
+                padding-bottom: 2%;
+            }
+          h1{
+                width: 85%;
+                text-align: center;
+                margin-top: 0;
+          }
+          img{
+            width: 300px;
+            height: 300px;
+          }
+        </style>
+    </head>
+  <body>
+      <div class="first">
+                    <h1>Courses</h1>
+            <div class="set">
+                <img src="images/nature.jpg" alt="image of nature">
+                <p>lorem ipsum dolor sit amet consectetur adipisicing elit.Quas, ex sint excepturi volptates qui omnis?</p>
+            </div>
+            <div class="set">
+                <img src="images/nature.jpg" alt="image of nature">
+                <p>lorem ipsum dolor sit amet consectetur adipisicing elit.Quas, ex sint excepturi volptates qui omnis?</p>
+            </div>
+            <div class="set">
+                <img src="images/nature.jpg" alt="image of nature">
+                <p>lorem ipsum dolor sit amet consectetur adipisicing elit.Quas, ex sint excepturi volptates qui omnis?</p>
+            </div>
+      </div>
+  </body>
+</html>
