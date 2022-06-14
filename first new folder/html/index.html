@@ -4,6 +4,364 @@
     
     <link rel="stylesheet" href="../css/stylesheet.css">
     <title>CodewithAsh</title>
+	
+	<style>
+	
+body { 
+    margin:0%;
+    padding: 0%;
+    height: 0%;
+    background-color:white;
+    background-repeat: no-repeat;
+    opacity: 50;
+    -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    
+  }
+  a:hover{
+    background-color:#5383d3;
+    padding:10px;
+    border-radius:10px;
+	color:#33383b;
+	height: 15px;
+  }
+/*code for header and nav bar*/
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color:black;
+  border-style: solid;
+  border-color:white;
+  border-width: 1.5px;
+  height:85px;
+}
+
+.header .logo {
+  font-size: 50px;
+  font-family:cursive;
+  color:WHITE;
+  text-decoration: none;
+  margin-left: 30px;
+  font-weight:bolder ;
+}
+.header .logo span{
+	color:#5383d3
+}
+
+.nav-items {
+  font-family:cursive;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color:BLACK;
+  margin-right: 10px;
+  font-weight: bolder;
+
+}
+
+.nav-items a {
+  text-decoration: none;
+  color:WHITE;
+  padding: 20px 40px;
+}
+/*code for  main intro */
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 600px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("https://media.giphy.com/media/xTiTnxpQ3ghPiB2Hp6/giphy.gif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.intro h1 {
+  font-family:cursive;
+  font-size: 50px;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0;
+}
+.intro h1 span{
+	color: #5383d3;
+}
+
+.intro p {
+   font-family:cursive;
+  font-size: 40px;
+  color:#fff;
+  text-transform: uppercase;
+  margin: 20px 0;
+  
+}
+.intro p span{
+	
+	text-transform: lowercase;
+}
+/*code for main  courses*/
+
+.achievements {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px 80px;
+  background-color:black;
+  border-width: 2px;
+  border-color:#fff;
+  border-style: solid;
+}
+
+.achievements .work {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 40px;
+  color: white;
+}
+
+.achievements .work i {
+  width: fit-content;
+  font-size: 50px;
+  color:solid white;
+  border-radius: 50%;
+  border: 2px white;
+  padding: 12px;
+}
+
+.achievements .work .work-heading {
+  font-size: 20px;
+  color:white;
+  text-transform: uppercase;
+  margin: 10px 0;
+  font-weight: bold;
+  font-family:cursive;
+}
+
+.achievements .work .work-text {
+  font-size: 15px;
+  color:white;
+  margin: 10px 0;
+ font-weight: bold;
+  font-family:Arial, Helvetica, sans-serif;
+}
+/*code for footer*/
+
+footer{
+  display:flex;
+	position:none;
+	bottom: 0;
+	border-style: solid;
+    border-color:white;
+    border-width: 2px;
+}
+.footer-distributed{
+	background-color:black;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+ 
+	padding: 55px 55px;
+	margin-top: 3px;
+}
+ 
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+ 
+.footer-distributed .footer-left{
+	width: 40%;
+	line-height:none;
+}
+ 
+.footer-distributed .footer-left h4{
+font-size:20px ;
+ font-family:Arial, Helvetica, sans-serif;
+ color: #fff;
+}
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Cookie', cursive;
+	margin: 0;
+}
+ 
+.footer-distributed h3 span{
+	color:  #5383d3;
+}
+ 
+ 
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+ 
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+ 
+.footer-distributed .footer-company-name{
+	color:  #8f9296;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+ 
+ 
+.footer-distributed .footer-center{
+	width: 35%;
+}
+ 
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+ 
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+ 
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin:0;
+}
+ 
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+ 
+.footer-distributed .footer-center p a{
+	color:  #5383d3;
+	text-decoration: none;;
+}
+ 
+.footer-distributed .footer-right{
+	width: 20%;
+}
+ 
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:#5383d3;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+	font-family: cursive;
+}
+ 
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:#5383d3;
+	font-size: 25px;
+	font-weight: bolder;
+	margin-bottom: 20px;
+}
+ 
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+ 
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:#fff;
+	border-radius: 2px;
+ 
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+ 
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+ 
+ 
+@media (max-width: 880px) {
+ 
+	.footer-distributed{
+		font: bold 14px sans-serif;
+ 
+	}
+ 
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+ 
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+	.main {
+		line-height: normal;
+		font-size: auto;
+	}
+ 
+}
+a.hover{
+	color: #33383b;
+}
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	</style>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 </head>
 <body>
     <header class="header">
@@ -13,6 +371,7 @@
           <a href="#">CSS</a>
           <a href="#">JAVASCRIPT</a>
         </nav>
+	        
       </header>
     <main>
         <div class="intro">
